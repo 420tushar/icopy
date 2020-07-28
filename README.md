@@ -39,6 +39,7 @@
    | `heroku login`                       |
    | `git add .`                          |
    | `heroku git:remote -a YOURAPPNAME`   |
+   | `git commit -am "make it new"`        |
    | `git push heroku master`             |
 
 10. Now go to resourses section and Turn the Worker ON
