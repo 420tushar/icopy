@@ -44,4 +44,11 @@
 
 10. Now go to resourses section and Turn the Worker ON
 
+## Bot Commands
 
+![Bot Commands](https://raw.githubusercontent.com/Nenokkadine/CDN/master/carbon%20(1).png)
+
+## Credits 
+
+iCopy - [fxxkrlab](https://github.com/fxxkrlab/iCopy)
+Fclone - [Mawaya](https://github.com/mawaya/rclone)
