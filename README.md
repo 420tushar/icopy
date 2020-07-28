@@ -7,7 +7,7 @@
 [![Version](https://img.shields.io/badge/Version-0.2.0--beta.6.4-ff69b4?style=flat-square&logo=appveyor)](https://bbs.jsu.net/c/official-project/icopy/6)
 [![License](https://img.shields.io/github/license/fxxkrlab/iCopy?style=flat-square&logo=appveyor)](https://bbs.jsu.net/c/official-project/icopy/6)
 [![DATABASE](https://img.shields.io/badge/DATABASE-MongoDB-brightgreen?style=flat-square&logo=appveyor)](https://github.com/mongodb/mongo)
-[![Stars](https://img.shields.io/github/stars/fxxkrlab/iCopy?style=flat-square&logo=appveyor)](https://github.com/fxxkrlab/iCopy)  
+[![Stars](https://img.shields.io/github/stars/Nenokkadine/iCopy-Heroku?style=flat-square&logo=appveyor)](https://github.com/Nenokkadine/iCopy-Heroku)  
 
 
 ## Install  
@@ -20,16 +20,30 @@
 4.`git clone https://github.com/fxxkrlab/iCopy.git && cd iCopy`  
 5.`chmod +x iCopy.py`  
 6.`pip3 install -r requirements.txt`  
-7.`cp config/conf.toml.example config/conf.toml`  
-8.&nbsp;Edit config/conf.toml  
+7.&nbsp;Edit config/conf.toml
+
+## Requirements for Heroku Deployment
+1. Heroku CLI
+2. Latest `git` Installed on ur PC.
 
 ## Deployment to Heroku
 1. First U should have a Heroku Account
 2. Go to heroku and Create a New app
 3. And then add a Config Var `RCLONE_CONFIG`  as `/app/rclone.conf` 
-1.`git clone https://github.com/Nenokkadine/ICopy-Heroku.git && cd ICopy-Heroku`
-2. Copy Your Service Accounts to accounts folder
-3. Copy 
+4. Go to the build packs section in settings and click add buildpack and enter "https://github.com/Nenokkadine/heroku-buildpack-Fclone-mod.git" as buildpack url then click save changes.
+5.Add Another Build Pack "Python" Which will be Available there.
+4.Now `git clone https://github.com/Nenokkadine/ICopy-Heroku.git && cd ICopy-Heroku`
+5. Copy Your Service Accounts to accounts folder
+6. Edit `config/conf.toml`  With MongoDB URL and Bot Token etc.
+7. Copy a Remote u Created Using FClone/GClone to ` rclone.conf`  and Dont forget to Give the same name of the Remote `config/conf.toml`
+8. Now Open Terminal/CMD in the same location
+9. Now Type the following Commands
+   `git init` -Initiate a git Repository
+   `heroku login` -Login to Heroku CLI
+   `git add .`
+   `heroku git:remote -a YOURAPPNAME` - Set git Remote
+   `git push heroku master` - Pushing the Repo to Heroku git
+   
 
 
  
