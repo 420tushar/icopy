@@ -1,4 +1,4 @@
-# iCopy Version 0.2.x
+# iCopy Version 0.2.0-Beta.6.4
 
 [<img src="https://f002.backblazeb2.com/file/jsuforum-upload/optimized/1X/cff2835c1652bb57a18aac42a3eee34b51cd9b89_2_1380x386.gif" width="50%" alt="iCopy">](https://bbs.jsu.net/c/official-project/icopy/6)  
 
