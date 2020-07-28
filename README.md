@@ -38,13 +38,14 @@
 7. Copy a Remote u Created Using FClone/GClone to ` rclone.conf`  and Dont forget to Give the same name of the Remote `config/conf.toml`
 8. Now Open Terminal/CMD in the same location
 9. Now Type the following Commands
-   `git init` -Initiate a git Repository
-   `heroku login` -Login to Heroku CLI
-   `git add .`
-   `heroku git:remote -a YOURAPPNAME` - Set git Remote
-   `git push heroku master` - Pushing the Repo to Heroku git
-   
 
+   |              Commands                |
+   | :----------------------------------: |
+   | `git init`                           |
+   | `heroku login`                       |
+   | `git add .`                          |
+   | `heroku git:remote -a YOURAPPNAME`   |
+   | `git push heroku master`             |
 
  
 
