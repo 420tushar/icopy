@@ -10,17 +10,6 @@
 [![Stars](https://img.shields.io/github/stars/Nenokkadine/iCopy-Heroku?style=flat-square&logo=appveyor)](https://github.com/Nenokkadine/iCopy-Heroku)  
 
 
-## Install  
-
-1.Python 3.6+ is Required  
-2.Mongodb is Required  
-3.Pre-install and Configured [fclone](https://github.com/mawaya/rclone/releases/tag/fclone-v0.3.1) is Reqired  
-&nbsp;&nbsp;&nbsp;&nbsp;For Linux directly use this command  
-&nbsp;&nbsp;&nbsp;`bash <(wget -qO- https://git.io/JJYE0)`  
-4.`git clone https://github.com/fxxkrlab/iCopy.git && cd iCopy`  
-5.`chmod +x iCopy.py`  
-6.`pip3 install -r requirements.txt`  
-7.&nbsp;Edit config/conf.toml
 
 ## Requirements for Heroku Deployment
 1. Heroku CLI
@@ -32,6 +21,9 @@
 3. And then add a Config Var `RCLONE_CONFIG`  as `/app/rclone.conf` 
 4. Go to the build packs section in settings and click add buildpack and enter "https://github.com/Nenokkadine/Fclone-BuildPack.git" as buildpack url then click save changes.
 5. Add Another Build Pack "Python" Which will be Available there.
+   
+   After Updating Everything It Should Look like this
+   
    ![settings](https://raw.githubusercontent.com/Nenokkadine/CDN/master/Readme1.png)
 4. Now `git clone https://github.com/Nenokkadine/ICopy-Heroku.git && cd ICopy-Heroku`
 5. Copy Your Service Accounts to accounts folder
