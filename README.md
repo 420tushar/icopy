@@ -31,13 +31,14 @@
 2. Go to heroku and Create a New app
 3. And then add a Config Var `RCLONE_CONFIG`  as `/app/rclone.conf` 
 4. Go to the build packs section in settings and click add buildpack and enter "https://github.com/Nenokkadine/heroku-buildpack-Fclone-mod.git" as buildpack url then click save changes.
-5.Add Another Build Pack "Python" Which will be Available there.
-4.Now `git clone https://github.com/Nenokkadine/ICopy-Heroku.git && cd ICopy-Heroku`
+5. Add Another Build Pack "Python" Which will be Available there.
+4. Now `git clone https://github.com/Nenokkadine/ICopy-Heroku.git && cd ICopy-Heroku`
 5. Copy Your Service Accounts to accounts folder
 6. Edit `config/conf.toml`  With MongoDB URL and Bot Token etc.
 7. Copy a Remote u Created Using FClone/GClone to ` rclone.conf`  and Dont forget to Give the same name of the Remote `config/conf.toml`
-8. Now Open Terminal/CMD in the same location
-9. Now Type the following Commands
+8. Open rclone config and edit `service_account_file_path = /app/accounts/` as the json paths
+9. Now Open Terminal/CMD in the same location
+10. Now Type the following Commands
 
    |              Commands                |
    | :----------------------------------: |
@@ -47,6 +48,6 @@
    | `heroku git:remote -a YOURAPPNAME`   |
    | `git push heroku master`             |
 
- 
+10. Now go to resourses section and Turn the Worker ON
 
 
