@@ -27,7 +27,7 @@
    ![settings](https://raw.githubusercontent.com/Nenokkadine/CDN/master/Readme1.png)
 4. Now `git clone https://github.com/Nenokkadine/ICopy-Heroku.git && cd ICopy-Heroku`
 5. Copy Your Service Accounts to accounts folder
-6. Edit `config/conf.toml`  With MongoDB URL and Bot Token etc.
+6. Edit `config/conf.toml`  With MongoDB URL and Bot Token etc. (Description for everything is Provided there)
 7. Copy a Remote u Created Using FClone/GClone to ` rclone.conf`  and Dont forget to Give the same name of the Remote `config/conf.toml`
 8. Open rclone config and edit `service_account_file_path = /app/accounts/` as the json paths (`Refer Rclone.conf Available in this Repo`)
 9. Now Open Terminal/CMD in the same location
