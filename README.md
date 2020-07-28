@@ -37,7 +37,7 @@
 5. Copy Your Service Accounts to accounts folder
 6. Edit `config/conf.toml`  With MongoDB URL and Bot Token etc.
 7. Copy a Remote u Created Using FClone/GClone to ` rclone.conf`  and Dont forget to Give the same name of the Remote `config/conf.toml`
-8. Open rclone config and edit `service_account_file_path = /app/accounts/` as the json paths
+8. Open rclone config and edit `service_account_file_path = /app/accounts/` as the json paths (Refer Rclone.conf Available in this Repo
 9. Now Open Terminal/CMD in the same location
 10. Now Type the following Commands
 
