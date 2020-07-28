@@ -26,10 +26,10 @@
 ## Deployment to Heroku
 1. First U should have a Heroku Account
 2. Go to heroku and Create a New app
-3.
+3. And then add a Config Var `RCLONE_CONFIG`  as `/app/rclone.conf` 
 1.`git clone https://github.com/Nenokkadine/ICopy-Heroku.git && cd ICopy-Heroku`
 2. Copy Your Service Accounts to accounts folder
-3. 
+3. Copy 
 
 
  
