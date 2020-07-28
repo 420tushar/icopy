@@ -30,8 +30,9 @@
 1. First U should have a Heroku Account
 2. Go to heroku and Create a New app
 3. And then add a Config Var `RCLONE_CONFIG`  as `/app/rclone.conf` 
-4. Go to the build packs section in settings and click add buildpack and enter "https://github.com/Nenokkadine/heroku-buildpack-Fclone-mod.git" as buildpack url then click save changes.
+4. Go to the build packs section in settings and click add buildpack and enter "https://github.com/Nenokkadine/Fclone-BuildPack.git" as buildpack url then click save changes.
 5. Add Another Build Pack "Python" Which will be Available there.
+   ![settings](https://raw.githubusercontent.com/Nenokkadine/CDN/master/Readme1.png)
 4. Now `git clone https://github.com/Nenokkadine/ICopy-Heroku.git && cd ICopy-Heroku`
 5. Copy Your Service Accounts to accounts folder
 6. Edit `config/conf.toml`  With MongoDB URL and Bot Token etc.
